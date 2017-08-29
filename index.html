@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Breaking Bad-WW</title>
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald" />
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="text-center" ng-app="app" ng-controller="controller1">
+  <h1>{{test1.heading}}</h1>
+  <h2>{{test1.subheading}}</h2>
+  <img ng-src="{{test1.imgURL}}"/> 
+  <h3>
+    {{test1.label}}
+  </h3>
+  <p>
+  {{test1.info}}
+  </p>
+
+  <h3>
+    {{test1.subheading3}}
+
+  </h3>
+ <ul ng-repeat="quote in quotes">
+
+   <li>
+     {{quote.quote}}           
+   </li>
+  </ul>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
